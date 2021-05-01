@@ -41,31 +41,12 @@ class InputPage extends StatelessWidget {
           CajaCity(),
           ComboBox(),
           SizedBox(height: 10),
-          Boton5(texto5: ''),
+          Divider(
+            height: 100,
+            thickness: 10,
+            color: Colors.green,
+          ),
         ],
-      ),
-    );
-  }
-}
-
-class Boton5 extends StatelessWidget {
-  final String texto5;
-
-  const Boton5({this.texto5});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
-      decoration: BoxDecoration(
-          color: Colors.green, borderRadius: BorderRadius.circular(2)),
-      child: Text(
-        this.texto5,
-        style: TextStyle(
-          fontSize: 10,
-          color: Colors.green,
-          fontWeight: FontWeight.bold,
-        ),
       ),
     );
   }
